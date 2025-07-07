@@ -1,491 +1,358 @@
-header {
-  display: grid;
-  grid-template-columns: 1fr min-content 1fr;
-  align-items: center;
-  padding: 0px;
-}
-
- header a {
-    position: relative;
-    display: block;
-}
-
-header nav ul {
-    display: flex;
-    flex-direction: row;
-    gap: 13px;
-    list-style: circle;
+  .content-section {
+  box-sizing: border-box;
+  width: 360px;
+  min-height: 100px;
+  margin: auto;
   }
   
-  header nav ul li {
-    color: inherit;
-    text-decoration: none;
+  .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 120px 120px 100px;
+  width:100%;
   }
+   
+  .header__logo {
+  display: block;
+  margin-left: 450px;
+  position: absolute;
+  top: 85px;
+  width: 135px;
+  } 
 
-address {
-    position: relative;
-    max-width: 240px;
-    justify-self: end;
-}
-.underlined {
+  .header__logo-image {
+  width: 100%;
+  }
+  
+  .header__menu-list {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  list-style: none;
+  }
+  
+  .header__menu-link {
+  color: black;
+  font-size: 18px;
+  line-height: 1.4;
+  text-decoration: none;
+  }
+  
+  .header__menu-item_non-active {
+  list-style: circle;
+  text-decoration: underline;
+  }  
+  
+  .header__address {
+  display: block;
+  margin-top: -35px;
+  width: 240px;
+  line-height: 1.4;
+  }
+  
+  .underlined {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px; 
+  text-decoration-line: underline;
+  color: #000000;
+  }
+  
+  .regular {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 24px;
-  text-decoration-line: underline;
-  text-decoration-color: 1px solid #000000;
   color: #000000;
-}
+  }
+  
+  .cover {
+  z-index: 1;
+  padding: 155px 50px 75px;
+  background-image: url(/Users/an/dev/first-project/ono-tebe-nado-fd/images/cover2.jpg);
+  background-position: center;
+  background-size: 100%;
+  min-height: 100%;
+  }
 
-.regular {
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 24px;
-color: #000000;
-
-}
-
-.cover { 
-  position: relative;
-
-}
-
-.overlay {
-inset: 0;
-position: absolute;
-z-index: 1;
-width: 1100px;
-height: 757px;
-left: 0px;
-top: 0px;
-background: #000000;
-opacity: 0.6;
-
-}
-
-.ono {
-position: absolute;
-
-width: 286px;
-
-height: 115px;
-
-left: 50px;
-
-top: 165px;
-
-font-family: 'Raleway';
-
-font-style: normal;
-
-font-weight: 700;
-
-font-size: 100px;
-
-line-height: 115%;
-
-letter-spacing: 0.3em;
-
-text-transform: uppercase;
-
-color: #FFFFFF;
-}
-
-.tebe {
-position: absolute;
-
-width: 339px;
-
-height: 115px;
-
-left: calc(50% - 339px/2);
-
-top: 300px;
-
-font-family: 'Raleway';
-
-font-style: normal;
-
-font-weight: 700;
-
-font-size: 100px;
-
-line-height: 115%;
-
-text-align: center;
-
-letter-spacing: 0.3em;
-
-text-transform: uppercase;
-
-color: #FFFFFF;
-}
-
-.nado {
-position: absolute;
-
-width: 387px;
-
-height: 115px;
-
-left: 663px;
-
-top: 435px;
-
-font-family: 'Raleway';
-
-font-style: normal;
-
-font-weight: 700;
-
-font-size: 100px;
-
-line-height: 115%;
-
-text-align: right;
-
-letter-spacing: 0.3em;
-
-text-transform: uppercase;
-
-color: #FFFFFF;
-
-}
-
-.subline {
+  .overlay {
   position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 88.5%;
+  left: 0;
+  top: 285px;
+  background: #000000;
+  opacity: 0.5;
+  }
 
-  width: 637px;
-  
-  height: 28px;
-  
-  left: 50px;
-  
-  top: 668px;
-  
-  font-family: 'Raleway';
-  
-  font-style: normal;
-  
-  font-weight: 400;
-  
-  font-size: 22px;
-  
-  line-height: 28px;
-  
-  text-transform: uppercase;
-
-  word-spacing: 25px;
-  
-  color: #FFFFFF;
-  
-}
-
-.button { box-sizing: border-box;
-position: absolute;
-width: 256px;
-height: 51px;
-left: 794px;
-top: 656px;
-border: 1px solid #FFFFFF;
-background: transparent;
-}
-
-.lots-header {
-position: absolute;
-width: 121px;
-height: 47px;
-left: 40px;
-top: 0px;
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 700;
-font-size: 40px;
-line-height: 47px;
-text-transform: uppercase;
-color: #000000;
-
-} 
-
-ul {
-  list-style: none;
-  list-style-type: none;
-}
-
-li {
-  width: 334px;
-  min-height: auto;
-}
-
-.section-lots {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-a, article {
-  height: 100%
-
-}
-
-.article {
+  .cover__title { 
   position: relative;
-  display: flex;
-  flex-direction: column;
-}
-
-.first-frame {
-  display: flex;
-position: absolute;
-width: 334px;
-height: 596px;
-left: 0px;
-top: 74px;
-
-}
-
-.second-frame {
-  display: flex;
-position: absolute;
-width: 334px;
-height: 596px;
-left: 359px;
-top: 74px;
-}
-
-.third-frame {
-  display: flex;
-position: absolute;
-width: 334px;
-height: 596px;
-left: 718px;
-top: 74px;
-}
-
-.card-link { 
-display: flex;
-z-index: 3;
-position: absolute;
-height: 110px;
-left: 40px;
-right: 40px;
-top: 48px;
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 700;
-font-size: 22px;
-line-height: 120%;
-text-transform: uppercase;
-color: #FFFFFF;
-
-}
-
-.lot {
-  position: absolute;
-  width: 334px;
-  height: 596px;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
   left: 0px;
   top: 0px;
-}
-
-.first-card_text, .second-card_text, .third-card_text {
-  z-index: 2;
-}
-
-.first-card_text {
-position: absolute;
-height: 144px;
-left: 40px;
-right: 40px;
-bottom: 48px;
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 120%;
-color: #FFFFFF;
-
-}
-
-.second-card_text {
-  position: absolute;
-  height: 360px;
-  left: 40px;
-  right: 40px;
-  bottom: 48px;
+  opacity: 100%;
+  width: 100%;
   font-family: 'Raleway';
   font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 120%;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 115%;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
   color: #FFFFFF;
+  }
+  
+  .description { 
+  position: relative;
+  z-index: 3;
+  padding-top: 75px;
+  }
 
-}
-
-.third-card_text {
-position: absolute;
-height: 264px;
-left: 40px;
-right: 40px;
-bottom: 48px;
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 120%;
-color: #FFFFFF;
-
-
-}
-.card-img {
-z-index: 0;
-position: absolute;
-left: 0%;
-right: 0%;
-top: 0%;
-bottom: 0%;
-
-}
-
-.lots__look-more-link {
+  .subline {
+  z-index: 3;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 28px;
+  text-transform: uppercase;
+  word-spacing: 20px;
+  color: #FFFFFF;
+  }
+  
+  .button {
   position: absolute;
-  width: 192px;
-  height: 23px;
-  left: 40px;
-  bottom: 0px;
+  width: 256px;
+  height: 51px;
+  left: 750px;
+  top: 800px;
+  border: 1px solid #FFFFFF;
+  background: transparent;
+  }
+  
+  .accent-span {
+  z-index: 3;
+  display: block;
+  margin-top: -45px;
+  }
+  
+  .text-center {
+  margin-top: 0;
+  text-align: center;
+  }
+  
+  .text-right {
+  margin-top: 0;    
+  text-align: right;
+  }
+
+  .lots__title {
+  padding: 200px 0 0 70px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  text-transform: uppercase;
+  color: #000000;
+  }
+
+  .lots {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 25px;
+  }
+
+  .first-frame-overlay {
+  position: absolute;
+  z-index: -1;
+  height: 95%;
+  left: 25px;
+  top: 1190px;
+  width: 30.5%;
+  background: #000000;
+  opacity: 0.5;
+  }
+    
+  .first-frame {
+  z-index: -2;
+  padding: 45px;
+  min-height: 596px;
+  background-image: url(/Users/an/dev/first-project/ono-tebe-nado-fd/images/card-lot-01.jpg);
+  background-position: center;
+  background-size: cover;
+  }
+
+  .second-frame-overlay {
+  position: absolute;
+  z-index: -1;
+  height: 95.5%;
+  left: 410px;
+  top: 1191px;
+  width: 30.5%;
+  background: #000000;
+  opacity: 0.5;
+  }
+
+  .second-frame {
+  z-index: -2;
+  padding: 45px;
+  min-height: 596px;
+  background-image: url(/Users/an/dev/first-project/ono-tebe-nado-fd/images/card-lot-02.jpg);
+  background-position: center;
+  background-size: cover;
+  }
+
+  .third-frame-overlay {
+  position: absolute;
+  z-index: -1;
+  height: 95.5%;
+  left: 793px;
+  top: 1191px;
+  width: 30.5%;
+  background: #000000;
+  opacity: 0.5; 
+  }
+
+  .third-frame {
+  z-index: -2;
+  padding: 45px;
+  min-height: 596px;
+  background-image: url(/Users/an/dev/first-project/ono-tebe-nado-fd/images/card-lot-03.jpg);
+  background-position: center;
+  background-size: cover;
+  }
+
+  .card-link {
+  z-index: 0;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  }
+
+  .card-text {
+  z-index: 0;
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 23px;
-  text-decoration-line: underline;
-  text-decoration-color: 1px solid #000000;
+  line-height: 1.3;
+  color: #FFFFFF;
+  }
+
+  .first {
+  margin-top: 350px;
+  }
+
+  .second {
+  margin-top: 70px;
+  }
+
+  .third {
+  margin-top: 210px;
+  }
+
+  .about {
+  padding: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  }
+  
+  .big-right-block {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  }
+  
+  .about-logo {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background-color: black;
+  }
+  
+  .logo-white { 
+  display: block;
+  width: 148px;
+  height: 114px;
+  }
+  
+  .about-title {
+  padding: 100px 0;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  text-transform: uppercase;
   color: #000000;
-}
+  }
+  
+  .about-text-top {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18.5px;
+  line-height: 24px;
+  color: #000000;
+  }
+  
+  .about-text-bottom {
+  margin-top: 24px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18.5px;
+  line-height: 24px;
+  color: #000000;
+  }
+  
+  .footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  padding: 100px 50px 100px;
+  }
 
-.about {
-position: absolute;
-width: 1052px;
-height: 595px;
-left: 24px;
-top: 2073px;
-
-}
-
-.container {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 25px;
-
-}
-
-.big-right-block {
-grid-column-start: 2;
-grid-column-end: 4;
-
-}
-
-.about-logo {
-position: absolute;
-width: 240px;
-height: 240px;
-left: calc(50% - 240px/2);
-top: calc(50% - 240px/2);
-background: #000000;
-display: flex; 
-flex-direction: row;
-justify-content: center;
-
-}
-
-.logo-white { 
+  .footer__address {
+  padding-right: 50px;
+  justify-self: start;
+  line-height: 1.4;
+  }
+  
+  .footer__menu {
+  justify-self: center;
+  }
+  
+  .footer__menu-list {
+  text-align: center;
+  list-style: none;
+  }
+  
+  .social-media {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.about-title {
-position: absolute;
-width: 291px;
-height: 47px;
-left: 0px;
-top: 3px;
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 700;
-font-size: 40px;
-line-height: 47px;
-text-transform: uppercase;
-color: #000000;
-
-}
-
-.description-block {
-  position: absolute;
-  width: 693px;
-  height: 312px;
-  left: 0px;
-  top: 150px;
-}
-
-.about-text-top {
-position: absolute;
-width: 688px;
-height: 120px;
-left: 0px;
-top: 150px;
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 24px;
-color: #000000;
+  justify-self: end;
+  gap: 48px;
+  list-style: none;
+  gap: 48px;
+  }
   
-}
-
-.about-text-bottom {
-position: absolute;
-width: 693px;
-height: 168px;
-left: 0px;
-top: 294px;
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 24px;
-color: #000000;
-
-}
-
-.footer {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 25px;
-
-}
-.address-footer {
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-.footer__menu {
-align-self: center;
-text-align: center;
-}
-
-.social-media {
-align-self: center;
-justify-self: end;
-}
-
-.footer__socials-icon {
-justify-content: center;
-align-content: center;
-place-items: center;
-} 
+  .social-media-link {
+  display: block;
+  width: 48px;
+  height: 48px;
+  }
