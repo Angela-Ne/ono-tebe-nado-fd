@@ -96,7 +96,6 @@
   left: 0px;
   top: 0px;
   opacity: 100%;
-  width: 100%;
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
@@ -346,7 +345,6 @@
   display: flex;
   flex-direction: row;
   justify-self: end;
-  gap: 48px;
   list-style: none;
   gap: 48px;
   }
